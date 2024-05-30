@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Project queries </div>
+        <p>
+            
+create table jobs(
+jid int NOT NULL auto_increment,
+title varchar(255) not null,
+description VARCHAR(200),
+category varchar(45),
+status varchar(45),
+location varchar(45),
+pdate DATETIME default current_timestamp ON UPDATE CURRENT_TIMESTAMP,
+PRIMARY KEY (jid),
+rid int,
+foreign key (rid) references register(id) on delete cascade
+);
+
+
+
+
+
+
+
+
+create table a_jobs(
+aid int auto_increment primary key,
+fullname varchar(255),
+email varchar(255),
+phoneno varchar(45),
+address varchar(255),
+links varchar(255),
+objective varchar(500),
+quli varchar(255),
+expe varchar(2000),
+skills varchar(255),
+certificate varchar(500),
+project varchar(2000),
+adate DATETIME DEFAULT CURRENT_TIMESTAMP,
+jobid int,
+foreign key(jobid) references jobs(jid) on delete cascade,
+uid int,
+foreign key(uid) references register(id) on delete cascade
+);
+
+
+
+
+create table register(
+id int not null auto_increment,
+fullname varchar(255),
+email varchar(255),
+password varchar(255),
+qualification varchar(255),
+phoneno varchar(45),
+gender varchar(255),
+role varchar(255),
+primary key (id)
+
+);
+
+
+create table contact(
+
+
+);
+
+
+
+        </p>
+    </body>
+</html>

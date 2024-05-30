@@ -1,0 +1,79 @@
+ body{
+    margin: 0;
+    padding:100px 50px;
+    font-family:'Montserrat' sans-serif;
+    background-image: linear-gradient( 135deg, #ABDCFF 100%, #0396FF 100%);
+   
+   *{
+    box-sizing: border-box;
+   }
+   h1{
+    text-align: center;
+    color: blueviolet;
+    margin: 20px 0;
+   }
+   .table{
+    width: 100%;
+    border-collapse: collapse;
+  
+  
+   }
+   .table td,.table th{
+    padding: 12px 15px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 16px;
+   }
+
+   .table th{
+    background-color:rgb(72, 72, 198);
+    color: #fff;
+   }
+   .table tbody tr:nth-child(even){
+    background-color: #f5f5f5;
+   }
+   .table tbody tr:nth-child(odd){
+    background-color: #fff;
+   }
+  button .btn {
+    background-color:rgb(226, 67, 43);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+   @media (max-width:700px) {
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+
+    }
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    
+    .table td::before{
+        content: attr(data-lable);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: blueviolet;
+    }
+   }

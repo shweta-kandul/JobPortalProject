@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    
+}
+a{
+    text-decoration: none;
+}
+
+.view-job{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.search,
+.card-body{
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+   
+   
+}
+.card-body{
+    display:flex;
+    flex-direction:column;
+}
+.jobicon i{
+  
+   margin-left: 50%;
+   font-size: 24px;
+}
+.card-body h5{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.card-body .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+    
+}
+.row-group .button input,
+.card-body .button input{
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;  
+    display: inline-block;
+    font-size: var(--p-font);
+    font-weight: 500;
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: all 40s ease;
+    margin-top: 10px;
+   margin-right: 16px;
+    gap: 8px;
+   
+}
+.row-group .button input{
+   margin-top: 50px;
+}
+.row-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row select,
+.row input{
+    height: 45px;
+    width: 350px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin:20px 0 20px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+}
+.row-group .left{
+    margin-right: 400px;
+}
